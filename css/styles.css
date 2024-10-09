@@ -1,0 +1,277 @@
+/* 
+.shadow {z-index-1}
+.benefits-img{z-index-2}
+.backdrop {z-index-99} 
+.backdrop-menu {z-index-99} 
+*/
+
+.hidden {
+  display: none;
+}
+
+/* ===== general style===== */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #2c2c2c;
+  font-size: 16px;
+  background-color: #fefefe;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  cursor: default;
+  margin: 0;
+}
+
+img {
+  display: block;
+  cursor: grabbing;
+}
+
+.svg {
+  display: block;
+}
+
+button {
+  padding: 0;
+  line-height: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.logo-img,
+.logo-img-footr {
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-weight: 400;
+  color: #505050;
+}
+
+.box-position-relarive {
+  position: relative;
+}
+
+.container {
+  max-width: 300px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 704px) {
+  .container {
+    max-width: 704px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+}
+
+/* ===== /general style===== */
+
+/* ===== header style===== */
+
+.header {
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 10px 0;
+}
+
+.nav-list {
+  display: none;
+}
+
+.main-button {
+  display: none;
+}
+
+.mobile-menu-btn {
+  fill: #7eb101;
+}
+
+@media screen and (min-width: 704px) {
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  .navigation {
+    margin-right: 30px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 28px;
+  }
+
+  .nav-list-item {
+    display: block;
+    padding: 28px 0;
+    font-size: 14px;
+    color: #000;
+    font-weight: 400;
+    transition: color 250ms ease-in, font-weight 250ms ease-in;
+  }
+
+  .nav-list-item:hover,
+  .nav-list-item:focus {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #bbf330;
+  }
+
+  .main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    min-width: 98px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.5;
+    background-color: #bbf330;
+    transition: background-color 250ms ease-in;
+  }
+
+  .main-button:hover,
+  .main-button:focus {
+    background-color: #ffe450;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav-list-item {
+    color: #2c2c2c;
+  }
+}
+
+/* ===== /header style===== */
+
+/* ===== Hero style===== */
+
+.section:nth-child(1) {
+  padding-top: 60px;
+}
+
+.section:nth-child(1) .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-title {
+  margin-bottom: 28px;
+  font-size: 28px;
+}
+
+.hero-text {
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.hero-img {
+  display: none;
+}
+
+/* ===== /Hero style===== */
+
+/*===== mobile menu style ===== */
+
+.backdrop-menu {
+  position: fixed;
+  z-index: 99;
+  top: -100%;
+  right: -100%;
+  width: 170px;
+  min-height: 311px;
+  background-color: transparent;
+  overflow: auto;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 250ms ease-in, visibility 250ms ease-in,
+    right 250ms ease-in, top 250ms ease-in;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  top: 0;
+  right: 0;
+}
+
+.modal-menu {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 170px;
+  min-height: 311px;
+  box-shadow: 0 4px 24px 0 rgba(105, 105, 105, 0.1);
+  border-radius: 3px;
+  background-color: #bbf330;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 7px;
+  right: 9px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.mobile-menu-list {
+  padding-top: 16px;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.menu-list-item.active {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2c2c2c;
+}
+
+.menu-list-item {
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+/*===== /mobile menu style ===== */
