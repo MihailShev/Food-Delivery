@@ -1,20 +1,9 @@
 /* ===== Hero style===== */
 
-.section:nth-child(1) {
-  padding-top: 14px;
-  padding-bottom: 69px;
-}
-
 .section:nth-child(1) .container {
   display: flex;
   align-items: center;
   gap: 143px;
-}
-
-.main-title {
-  line-height: 1.2;
-  font-size: 48px;
-  margin-bottom: 28px;
 }
 
 .hero-text {

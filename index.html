@@ -97,27 +97,103 @@
       <!------- Hero section ------->
       <section class="section">
         <div class="container">
-          <div class="hero-wrapper">
-            <h1 class="main-title">
-              Enjoy Your Favorite<br />
-              Food From Anywhere
-            </h1>
+          <div class="wrap-hero">
+            <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
 
-            <p class="hero-text">
-              With just a few clicks, you can have your favorite meals delivered
-              straight to your doorstep, no matter where you are. Order now
-              enjoy a hassle-free and delicious meal from the comfort of your
-              own home.
-            </p>
-            <button class="main-button" type="button">Order Now</button>
+            <div class="inner-hero-wrapp">
+              <p class="hero-text">
+                With just a few clicks, you can have your favorite meals
+                delivered straight to your doorstep, no matter where you are.
+                Order now enjoy a hassle-free and delicious meal from the
+                comfort of your own home.
+              </p>
+
+              <button class="hero-button" type="button">Order Now</button>
+            </div>
+
+            <div class="slider-hero">
+              <button class="left-arrow-btn" type="button">
+                <svg class="left-arrow-icon" width="28" height="34">
+                  <use href="./img/icon/icons.svg#icon-left-arrow"></use>
+                </svg>
+              </button>
+
+              <div class="inner-hero-slider">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/hero/lavash-desk.png    1x,
+                      ./img/section-photo/hero/lavash-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/section-photo/hero/lavash-tab.png    1x,
+                      ./img/section-photo/hero/lavash-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+                  <img
+                    src="./img/section-photo/hero/lavash-tab.png"
+                    alt="lavash"
+                  />
+                </picture>
+              </div>
+
+              <div class="inner-hero-slider hidden">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/hero/salat-desk.png    1x,
+                      ./img/section-photo/hero/salat-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/section-photo/hero/salat-tab.png    1x,
+                      ./img/section-photo/hero/salat-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+                  <img
+                    src="./img/section-photo/hero/salat-tab.png"
+                    alt="salat"
+                  />
+                </picture>
+              </div>
+
+              <div class="inner-hero-slider hidden">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/hero/egg-desk.png    1x,
+                      ./img/section-photo/hero/egg-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+                  <source
+                    srcset="
+                      ./img/section-photo/hero/egg-tab.png    1x,
+                      ./img/section-photo/hero/egg-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+                  <img
+                    src="./img/section-photo/hero/egg-desk@2x.png"
+                    alt="edd"
+                  />
+                </picture>
+              </div>
+
+              <button class="rigth-arrow-btn" type="button">
+                <svg class="rigth-arrow-icon" width="28" height="34">
+                  <use href="./img/icon/icons.svg#icon-rigth-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </div>
-          <img
-            src=""
-            alt="salat"
-            class="hero-img"
-            height="528px"
-            width="528px"
-          />
         </div>
       </section>
 
@@ -510,6 +586,7 @@
     ></script>
 
     <!------- local js ------->
+    <script src="./js/slider.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
