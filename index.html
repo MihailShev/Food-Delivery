@@ -495,7 +495,7 @@
       </section>
 
       <!------- Reviews section ------->
-      <section class="section" id="service">
+      <section class="section hidden" id="service">
         <div class="container">
           <h2 class="reviews-title">What our Customers Say</h2>
 
@@ -622,31 +622,54 @@
       </section>
 
       <!------- Subscribe section ------->
-      <section class="section hidden" id="contact">
+      <section class="section" id="contact">
         <div class="container box-position-relarive">
+          <picture>
+            <source
+              srcset="
+                ./img/section-photo/subscribe/banan-desk.png    1x,
+                ./img/section-photo/subscribe/banan-desk@2x.png 2x
+              "
+              media="(min-width:1280px)"
+            />
+
+            <source
+              srcset="
+                ./img/section-photo/subscribe/banan-tab.png    1x,
+                ./img/section-photo/subscribe/banan-tab@2x.png 2x
+              "
+              media="(min-width:704px)"
+            />
+
+            <source
+              srcset="
+                ./img/section-photo/subscribe/banan.png    1x,
+                ./img/section-photo/subscribe/banan@2x.png 2x
+              "
+              media="(max-width:703px)"
+            />
+
+            <img
+              src="./img/section-photo/subscribe/banan.png"
+              alt="banan"
+              class="img-absolute"
+            />
+          </picture>
+
           <h2 class="subscribe-title">Subscribe To Get Special Offers</h2>
+
           <p class="subscribe-text">
             Order now and receive 10% off your first meal with Enjoy Your
             Favorite Food From Anywhere.
           </p>
+
           <div class="subscribe-box">
             <form>
-              <input
-                class="form"
-                type="email"
-                placeholder="Enter your email"
-              /><button type="submit" class="main-button subsc-btn">
-                Subscribe
-              </button>
+              <input class="form" type="email" placeholder="Enter your email" />
+
+              <button class="subscribe-btn" type="submit">Subscribe</button>
             </form>
           </div>
-          <img
-            src=""
-            alt="banan"
-            height="266"
-            width="608"
-            class="img-absolute"
-          />
         </div>
       </section>
     </main>

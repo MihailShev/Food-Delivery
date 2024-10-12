@@ -896,6 +896,113 @@ input::placeholder {
 
 /* ===== /Reviews style===== */
 
+/* ===== Subscribe style===== */
+
+.section:nth-child(5) {
+  padding: 17px 20px 60px;
+}
+
+.img-absolute {
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+}
+
+.subscribe-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.subscribe-text {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.form {
+  border: 0.85px solid #ffe550;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  padding-left: 11px;
+  width: 279px;
+  height: 42px;
+  outline: none;
+}
+
+.subscribe-btn {
+  background-color: #bbf330;
+  border-radius: 30px;
+  min-width: 103px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  margin-left: auto;
+  display: block;
+  margin-top: 20px;
+  transition: background-color 250ms ease-in;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #ffe450;
+}
+
+@media screen and (min-width: 704px) {
+  .section:nth-child(5) {
+    padding: 46px 0px 100px 0;
+  }
+
+  .img-absolute {
+    width: 281px;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .subscribe-title {
+    font-size: 42px;
+  }
+
+  .subscribe-text {
+    margin-bottom: 24px;
+  }
+
+  .subscribe-box {
+    display: flex;
+  }
+
+  .form {
+    width: 395px;
+    margin-right: 22px;
+  }
+
+  .subscribe-btn {
+    display: inline-block;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section:nth-child(5) {
+    padding: 176px 0px 201px 2px;
+  }
+
+  .img-absolute {
+    margin-bottom: 0;
+    position: absolute;
+    width: 608px;
+    height: 266px;
+    right: 0;
+    top: -46px;
+  }
+}
+
+/* ===== /Subscribe style===== */
+
 /*===== mobile menu style ===== */
 
 .backdrop-menu {
