@@ -665,8 +665,7 @@ input::placeholder {
   transition: border 250ms ease-in;
 }
 
-.wrapp-food-img:hover,
-.wrapp-food-img:focus {
+.wrapp-food-img:hover {
   border: 11px solid #bbf330;
 }
 
@@ -705,6 +704,23 @@ input::placeholder {
   .img-item {
     width: calc((100% - 32px) / 2);
   }
+
+  .wrapp-food-img {
+    border: 14px solid #ffe550;
+    width: 336px;
+    height: 338px;
+    transition: border 250ms ease-in;
+  }
+
+  .wrapp-food-img:hover {
+    border: 14px solid #bbf330;
+  }
+
+  .food-img {
+    width: 268px;
+    height: 268px;
+    margin: 34px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -722,6 +738,28 @@ input::placeholder {
 
   .img-item {
     width: calc((100% - 64px) / 3);
+  }
+
+  .wrapp-food-img {
+    border: 16px solid #ffe550;
+    width: 395px;
+    height: 397px;
+  }
+
+  .wrapp-food-img:hover {
+    border: 15px solid #bbf330;
+    transform: scale(0.98);
+  }
+
+  .food-img {
+    width: 315px;
+    height: 315px;
+    margin: 41px 40px;
+    transition: transform 250ms ease-in;
+  }
+
+  .wrapp-food-img:hover .food-img {
+    transform: scale(0.95);
   }
 }
 
