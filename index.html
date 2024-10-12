@@ -178,7 +178,7 @@
                   "
                   media="(min-width:704px)"
                 />
-                <img src="./img/section-photo/hero/egg-desk@2x.png" alt="edd" />
+                <img src="./img/section-photo/hero/egg-tab.png" alt="edd" />
               </picture>
             </div>
 
@@ -191,8 +191,8 @@
         </div>
       </section>
 
-      <!------- Вenefits section ------->
-      <section class="section" id="about">
+      <!------- about section ------->
+      <section class="section hidden" id="about">
         <div class="container">
           <div class="benefits-img-wrapp">
             <div class="img-wrapp">
@@ -286,52 +286,209 @@
       </section>
 
       <!------- Food section ------->
-      <section class="section hidden" id="food">
+      <section class="section" id="food">
         <div class="container">
           <h2 class="food-title">Some of Our Favorites</h2>
+
           <p class="food-text">Looking for something delicious?</p>
+
           <ul class="img-list">
             <li class="img-item">
-              <img
-                class="food-img"
-                src=""
-                alt="gamburger"
-                height="315px"
-                width="315px"
-              />
+              <div class="wrapp-food-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/food/desk/gamburger-desk.png    1x,
+                      ./img/section-photo/food/desk/gamburger-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/tab/gamburger-tab.png    1x,
+                      ./img/section-photo/food/tab/gamburger-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/mob/gamburger-mob.png    1x,
+                      ./img/section-photo/food/mob/gamburger-mob@2x.png 2x
+                    "
+                    media="(max-width:703px)"
+                  />
+
+                  <img
+                    class="food-img"
+                    src="./img/section-photo/food/mob/gamburger-mob.png"
+                    alt="gamburger"
+                  />
+                </picture>
+              </div>
             </li>
+
             <li class="img-item">
-              <img
-                class="food-img"
-                src=""
-                alt="Pasta"
-                height="315px"
-                width="315px"
-              />
+              <div class="wrapp-food-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/food/desk/pasta-desk.png    1x,
+                      ./img/section-photo/food/desk/pasta-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/tab/pasta-tab.png    1x,
+                      ./img/section-photo/food/tab/pasta-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/mob/pasta-mob.png    1x,
+                      ./img/section-photo/food/mob/pasta-mob@2x.png 2x
+                    "
+                    media="(max-width:703px)"
+                  />
+
+                  <img
+                    class="food-img"
+                    src="./img/section-photo/food/mob/pasta-mob.png"
+                    alt="Pasta"
+                  />
+                </picture>
+              </div>
             </li>
+
             <li class="img-item">
-              <img
-                class="food-img"
-                src=""
-                alt="pizza"
-                height="315px"
-                width="315px"
-              />
+              <div class="wrapp-food-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/food/desk/pizza-desk.png    1x,
+                      ./img/section-photo/food/desk/pizza-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/tab/pizza-tab.png    1x,
+                      ./img/section-photo/food/tab/pizza-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/mob/pizza-mob.png    1x,
+                      ./img/section-photo/food/mob/pizza-mob@2x.png 2x
+                    "
+                    media="(max-width:703px)"
+                  />
+
+                  <img
+                    class="food-img"
+                    src="./img/section-photo/food/mob/pizza-mob.png"
+                    alt="pizza"
+                  />
+                </picture>
+              </div>
             </li>
-            <li class="img-item">
-              <img class="food-img" src="" alt="chicken" height="315px" />
+
+            <!----- hidden mobile ----->
+
+            <li class="img-item mobile-hidden">
+              <div class="wrapp-food-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/food/desk/chicken-desk.png    1x,
+                      ./img/section-photo/food/desk/chicken-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/tab/chicken-tab.png    1x,
+                      ./img/section-photo/food/tab/chicken-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+
+                  <img
+                    class="food-img"
+                    src="./img/section-photo/food/tab/chicken-tab.png"
+                    alt="chicken"
+                  />
+                </picture>
+              </div>
             </li>
-            <li class="img-item">
-              <img class="food-img" src="" alt="salat" width="315px" />
+
+            <!----- hidden mobile ----->
+
+            <li class="img-item mobile-hidden">
+              <div class="wrapp-food-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/food/desk/salat-desk.png    1x,
+                      ./img/section-photo/food/desk/salat-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/tab/salat-tab.png,
+                      ./img/section-photo/food/tab/salat-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+
+                  <img
+                    class="food-img"
+                    src="./img/section-photo/food/tab/salat-tab.png"
+                    alt="salat"
+                  />
+                </picture>
+              </div>
             </li>
-            <li class="img-item">
-              <img
-                class="food-img"
-                src=""
-                alt="borshch"
-                height="315px"
-                width="315px"
-              />
+
+            <!----- hidden mobile ----->
+
+            <li class="img-item mobile-hidden">
+              <div class="wrapp-food-img">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/section-photo/food/desk/borshch-desk.png    1x,
+                      ./img/section-photo/food/desk/borshch-desk@2x.png 2x
+                    "
+                    media="(min-width:1280px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./img/section-photo/food/tab/borshch-tab.png    1x,
+                      ./img/section-photo/food/tab/borshch-tab@2x.png 2x
+                    "
+                    media="(min-width:704px)"
+                  />
+
+                  <img
+                    class="food-img"
+                    src="./img/section-photo/food/tab/borshch-tab.png"
+                    alt="borshch"
+                  />
+                </picture>
+              </div>
             </li>
           </ul>
         </div>

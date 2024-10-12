@@ -65,6 +65,8 @@ button {
 
 input::placeholder {
   font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
   color: #505050;
 }
 
@@ -357,10 +359,10 @@ input::placeholder {
 
 /* ===== /Hero style===== */
 
-/* ===== Вenefits style===== */
+/* ===== about style===== */
 
 .section:nth-child(2) {
-  padding: 91px 20px;
+  padding: 91px 20px 0 20px;
 }
 
 .benefits-img-wrapp {
@@ -462,6 +464,13 @@ input::placeholder {
   font-size: 13px;
   line-height: 1.5;
   margin-right: 24px;
+  transition: background-color 250ms ease-in, border-color 250ms ease-in;
+}
+
+.benefits-btn:hover,
+.benefits-btn:focus {
+  background-color: #bbf330;
+  border-color: #bbf330;
 }
 
 .benefits-btn-more {
@@ -611,7 +620,112 @@ input::placeholder {
   }
 }
 
-/* ===== /Вenefits style===== */
+/* ===== /about style===== */
+
+/* ===== Food style===== */
+
+/*===== hidden mobile, tablet and desktop visible
+  {chicken, salat, borshch} =====*/
+.mobile-hidden {
+  display: none;
+}
+/*===== /hidden mobile, tablet and desktop visible
+  {chicken, salat, borshch} =====*/
+
+.section:nth-child(3) {
+  padding: 132px 20px 0 20px;
+}
+
+.food-title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.food-text {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 76px;
+}
+
+.img-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.wrapp-food-img {
+  border: 11px solid #ffe550;
+  border-radius: 100%;
+  width: 280px;
+  height: 282px;
+  transition: border 250ms ease-in;
+}
+
+.wrapp-food-img:hover,
+.wrapp-food-img:focus {
+  border: 11px solid #bbf330;
+}
+
+.food-img {
+  width: 223px;
+  height: 223px;
+  margin: 29px 28px;
+}
+
+@media screen and (min-width: 704px) {
+  .section:nth-child(3) {
+    padding: 191px 32px 0 32px;
+  }
+
+  .food-title {
+    font-size: 42px;
+  }
+
+  .food-text {
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+
+  .mobile-hidden {
+    display: block;
+  }
+
+  .img-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0;
+    gap: 32px;
+  }
+
+  .img-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section:nth-child(3) {
+    padding: 120px 0px 101px 0px;
+  }
+
+  .food-text {
+    margin-bottom: 40px;
+  }
+
+  .img-list {
+    display: flex;
+  }
+
+  .img-item {
+    width: calc((100% - 64px) / 3);
+  }
+}
+
+/* ===== /Food style===== */
 
 /*===== mobile menu style ===== */
 
