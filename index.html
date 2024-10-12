@@ -286,7 +286,7 @@
       </section>
 
       <!------- Food section ------->
-      <section class="section" id="food">
+      <section class="section hidden" id="food">
         <div class="container">
           <h2 class="food-title">Some of Our Favorites</h2>
 
@@ -495,13 +495,15 @@
       </section>
 
       <!------- Reviews section ------->
-      <section class="section hidden" id="service">
+      <section class="section" id="service">
         <div class="container">
           <h2 class="reviews-title">What our Customers Say</h2>
+
           <p class="reviews-text">
             Don't just take our word for it - see what our satisfied customers
             have to say
           </p>
+
           <ul class="list-reviews">
             <li class="reviews-item">
               <ul class="list-icon-star">
@@ -510,38 +512,56 @@
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
               </ul>
+
               <p class="reviews-subtext">
                 “The Best app I have used to order food in a while, so many
                 options to choose from too, I would recommend to a freind, No
                 questions asked”
               </p>
+
               <div class="box-name">
-                <img src="" alt="men" height="48px" width="48px" />
+                <img
+                  srcset="
+                    ./img/section-photo/reviews/men.png    1x,
+                    ./img/section-photo/reviews/men@2x.png 2x
+                  "
+                  src="./img/section-photo/reviews/men.png"
+                  alt="men"
+                  height="48px"
+                  width="48px"
+                />
+
                 <h3 class="reviews-name">Sumith Shah</h3>
+
                 <p class="reviews-desc">Some Dude</p>
               </div>
             </li>
+
             <li class="reviews-item">
               <ul class="list-icon-star">
                 <li class="item-star">
@@ -549,6 +569,7 @@
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
@@ -559,25 +580,40 @@
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
+
                 <li class="item-star">
                   <svg class="svg-icon-reviews" width="17" height="17">
                     <use href="./img/icon/icons.svg#icon-star"></use>
                   </svg>
                 </li>
               </ul>
+
               <p class="reviews-subtext">
                 ”The ease with which I can just go in and order what i want was
                 amazing, It has been a very pleasant experience ordering from
                 this app”
               </p>
+
               <div class="box-name">
-                <img src="" alt="girl" height="48px" width="48px" />
+                <img
+                  srcset="
+                    ./img/section-photo/reviews/girl.png    1x,
+                    ./img/section-photo/reviews/girl@2x.png 2x
+                  "
+                  src="./img/section-photo/reviews/girl.png"
+                  alt="girl"
+                  height="48px"
+                  width="48px"
+                />
+
                 <h3 class="reviews-name">Sumith Shah</h3>
+
                 <p class="reviews-desc">Some Dude</p>
               </div>
             </li>
@@ -728,6 +764,7 @@
       </div>
     </div>
 
+    <!------- mobile menu ------->
     <div class="backdrop-menu" data-menu>
       <div class="modal-menu">
         <button class="menu-close-btn" type="button" data-menu-close>

@@ -41,8 +41,6 @@ p {
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
   cursor: grabbing;
 }
 
@@ -744,11 +742,12 @@ input::placeholder {
     border: 16px solid #ffe550;
     width: 395px;
     height: 397px;
+    transition: border 250ms ease-in, transform 250ms ease-in;
   }
 
   .wrapp-food-img:hover {
     border: 15px solid #bbf330;
-    transform: scale(0.98);
+    transform: scale(0.9);
   }
 
   .food-img {
@@ -759,11 +758,143 @@ input::placeholder {
   }
 
   .wrapp-food-img:hover .food-img {
-    transform: scale(0.95);
+    transform: scale(0.94);
   }
 }
 
 /* ===== /Food style===== */
+
+/* ===== Reviews style===== */
+.section:nth-child(4) {
+  padding: 120px 20px 0 20px;
+}
+
+.reviews-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reviews-text {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.list-reviews {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.reviews-item {
+  background: #fefefe;
+  padding: 8px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-icon-star {
+  fill: #ffe550;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 28px;
+}
+
+.reviews-subtext {
+  font-weight: 700;
+  font-size: 16px;
+  width: 262px;
+  margin-bottom: 40px;
+}
+
+.box-name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  column-gap: 16px;
+  width: 160px;
+  height: 52px;
+  border-right: 0.85px solid #7eb101;
+}
+
+.reviews-name {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reviews-desc {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 704px) {
+  .section:nth-child(4) {
+    padding: 160px 0 0 0;
+  }
+
+  .reviews-title {
+    font-size: 42px;
+  }
+
+  .reviews-text {
+    margin-bottom: 32px;
+  }
+
+  .list-reviews {
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 32px;
+  }
+
+  .reviews-item {
+    padding: 12px;
+    width: 336px;
+    height: 244px;
+  }
+
+  .reviews-subtext {
+    font-size: 18px;
+    width: 312px;
+  }
+
+  .box-name {
+    border-right: 1px solid #7eb101;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section:nth-child(4) {
+    padding: 140px 72px 126px 0;
+    background-color: #ffe550;
+  }
+
+  .reviews-text {
+    margin-bottom: 33px;
+  }
+
+  .list-reviews {
+    column-gap: 139px;
+  }
+
+  .box-name {
+    margin-top: auto;
+  }
+
+  .reviews-subtext {
+    width: 469px;
+  }
+
+  .reviews-item {
+    border-radius: 0 30px 30px 30px;
+    width: 501px;
+    padding: 14px;
+  }
+}
+
+/* ===== /Reviews style===== */
 
 /*===== mobile menu style ===== */
 
