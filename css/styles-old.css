@@ -1,10 +1,7 @@
 /* ===== footer style===== */
 .footr {
-  box-shadow: 0 -4px 24px 0 rgba(105, 105, 105, 0.1);
   background-image: url(../img/svg-img/footer-desktop.png);
-  background-repeat: no-repeat;
   background-size: 1243px;
-  background-position: bottom;
 }
 
 .flex-box-footr {
